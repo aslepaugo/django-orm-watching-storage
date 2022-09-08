@@ -15,19 +15,14 @@ cd django-orm-watching-storage
 pip install -r requirements.txt
 ```
 
-3. Для подключения к Базе Данных необходимо заполнить ключи в файле [settings.py](/project/settings.py)
+3. Для подключения к Базе Данных необходимо создать файл .env вида:
 
 ```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': '{MY_HOST}',
-        'PORT': '{PORT}',
-        'NAME': '{DB_NAME}',
-        'USER': '{USER_NAME}',
-        'PASSWORD': '{PASSWORD}',
-    }
-}
+HOST = YOUR_HOST
+PORT = DB_PORT
+NAME = DB_NAME
+USER = DB_USER
+PASSWORD = DB_PASSWORD
 ```
 
 Для производственного развертывания необходимо изменить значения:
