@@ -23,13 +23,14 @@ PORT = DB_PORT
 NAME = DB_NAME
 USER = DB_USER
 PASSWORD = DB_PASSWORD
+DEBUG = False[True]
 ```
 
 Для производственного развертывания необходимо изменить значения:
 
 ```python
 SECRET_KEY = '{GENERATE_SECRETE_KEY}'
-DEBUG = False
+
 ```
 
 ## Пример запуска
