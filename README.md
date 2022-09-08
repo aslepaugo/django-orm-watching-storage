@@ -15,10 +15,10 @@ cd django-orm-watching-storage
 pip install -r requirements.txt
 ```
 
-3. Для подключения к Базе Данных необходимо создать файл .env вида:
+3. Настройки подключения к базе данных а также настройка режима отладки (свойство `DEBUG`) должны находиться в файле .env.
 
-```python
-HOST = YOUR_HOST
+```bash
+HOST = YOUR_DB_HOST
 PORT = DB_PORT
 NAME = DB_NAME
 USER = DB_USER
@@ -26,7 +26,7 @@ PASSWORD = DB_PASSWORD
 DEBUG = False[True]
 ```
 
-Для производственного развертывания необходимо изменить значения:
+Для производственного развертывания необходимо изменить значениe `SECRET_KEY` в [settings.py](/project/settings.py):
 
 ```python
 SECRET_KEY = '{GENERATE_SECRETE_KEY}'
