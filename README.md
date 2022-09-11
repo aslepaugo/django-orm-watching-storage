@@ -18,11 +18,12 @@ pip install -r requirements.txt
 3. Настройки подключения к базе данных а также настройка режима отладки (свойство `DEBUG`) должны находиться в файле .env.
 
 ```bash
-HOST = YOUR_DB_HOST
-PORT = DB_PORT
-NAME = DB_NAME
-USER = DB_USER
-PASSWORD = DB_PASSWORD
+DB_ENGINE = YOUR_DB_ENGINE 
+DB_HOST = YOUR_DB_HOST
+DB_PORT = DB_PORT
+DB_NAME = DB_NAME
+DB_USER = DB_USER
+DB_PASSWORD = DB_PASSWORD
 DEBUG = False[True]
 ```
 
