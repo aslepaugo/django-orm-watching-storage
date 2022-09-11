@@ -25,6 +25,7 @@ DB_NAME = DB_NAME
 DB_USER = DB_USER
 DB_PASSWORD = DB_PASSWORD
 DEBUG = False[True]
+SECRET_KEY = YOUR_UNIQUE_SECRET_KEY
 ```
 
 Для производственного развертывания необходимо изменить значениe `SECRET_KEY` в [settings.py](/project/settings.py):
