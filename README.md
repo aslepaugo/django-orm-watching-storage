@@ -28,13 +28,6 @@ DEBUG = False[True]
 SECRET_KEY = YOUR_UNIQUE_SECRET_KEY
 ```
 
-Для производственного развертывания необходимо изменить значениe `SECRET_KEY` в [settings.py](/project/settings.py):
-
-```python
-SECRET_KEY = '{GENERATE_SECRETE_KEY}'
-
-```
-
 ## Пример запуска
 
 ```bash
